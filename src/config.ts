@@ -1,6 +1,6 @@
 import type { PostHideElements } from '~/content/config';
 
-export const Site = 'https://astro-blog-zozo.pages.dev';
+export const Site = 'https://weilv-D.github.io';
 export const SiteLanguage = 'zh';
 export const SiteTitle = '无尽光芒';
 export const SiteDescription = '踏歌长行，梦想永在';
