@@ -10,7 +10,7 @@ export const PageSize = 15;
 // socialPlatform => userName
 // check components/Header.astro socialConfig for more info
 export const Socials: Record<string, Record<string, string>> = {
-	mail: { url: 'weilv@mail.com' },
+	mail: { url: 'mailto:weilv@mail.com' },
 	github: { url: 'https://github.com/Weilv-D' },
 	wechat: { url: '' },
 	qq: { url: '' },
