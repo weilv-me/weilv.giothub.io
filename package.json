@@ -45,6 +45,7 @@
         "astro-pagefind": "^1.6.0",
         "gh-pages": "^6.2.0",
         "katex": "^0.16.11",
+        "lottie-web": "^5.12.2",
         "lxgw-wenkai-screen-web": "^1.501.0",
         "mdast-util-to-string": "^4.0.0",
         "node-gyp": "^10.2.0",
