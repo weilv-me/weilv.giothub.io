@@ -1,6 +1,6 @@
 import type { PostHideElements } from '~/content/config';
 
-export const Site = 'https://weilv-D.github.io';
+export const Site = 'https://weilv.space';
 export const SiteLanguage = 'zh';
 export const SiteTitle = '未来回忆录';
 export const SiteDescription = '我的时空褶皱';
