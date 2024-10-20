@@ -2,8 +2,8 @@ import type { PostHideElements } from '~/content/config';
 
 export const Site = 'https://weilv-D.github.io';
 export const SiteLanguage = 'zh';
-export const SiteTitle = '银河系漫游指南';
-export const SiteDescription = '每个人都是自己宇宙的缔造者';
+export const SiteTitle = '未来回忆录';
+export const SiteDescription = '我的时空褶皱';
 export const FooterDescription = '给时光以生命';
 export const PageSize = 15;
 
