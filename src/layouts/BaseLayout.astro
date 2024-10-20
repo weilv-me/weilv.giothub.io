@@ -2,7 +2,6 @@
 import { ViewTransitions } from 'astro:transitions';
 import { SiteLanguage, SiteTitle } from '~/config';
 import 'lxgw-wenkai-screen-web/lxgwwenkaigbscreen/result.css';
-import { onMount } from 'astro';
 import lottie from 'lottie-web';
 import animationData from '~/assets/Animation - 1729432106313.json';
 
@@ -24,18 +23,20 @@ export interface Props {
 const { title, description, socialImage, rootClass, bodyClass } = Astro.props;
 const socialImg = new URL(socialImage ?? '/og.png', Astro.url).href;
 
-onMount(() => {
-    const animationContainer = document.getElementById('animation-container');
-    if (animationContainer) {
-        lottie.loadAnimation({
-            container: animationContainer,
-            renderer: 'svg',
-            loop: true,
-            autoplay: true,
-            animationData: animationData,
-        });
-    }
-});
+if (typeof window !== 'undefined') {
+    window.addEventListener('DOMContentLoaded', () => {
+        const animationContainer = document.getElementById('animation-container');
+        if (animationContainer) {
+            lottie.loadAnimation({
+                container: animationContainer,
+                renderer: 'svg',
+                loop: true,
+                autoplay: true,
+                animationData: animationData,
+            });
+        }
+    });
+}
 ---
 
 <html lang={SiteLanguage} class:list={rootClass}>
