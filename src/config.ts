@@ -43,3 +43,6 @@ export type HideElements =
 	| 'footerDescription';
 // Always hide elements from site
 export const Hide: HideElements[] = [];
+
+export const DefaultAuthor = 'Weilv';
+export const CopyrightYear = '2024';
